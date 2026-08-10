@@ -1,0 +1,36 @@
+# ── Core orchestration ──────────────────────────────
+pipecat-ai[silero,local]>=0.0.50
+
+# ── STT (Speech-to-Text) ────────────────────────────
+faster-whisper>=1.0.3
+
+# ── TTS (Text-to-Speech) ────────────────────────────
+TTS>=0.22.0
+soundfile>=0.12.1
+git+https://github.com/huggingface/parler-tts.git
+transformers>=4.41.0
+
+# ── LLM (Groq API — free tier) ──────────────────────
+groq>=0.9.0
+
+# ── NLU / Intent classification ─────────────────────
+spacy>=3.7.5
+
+# ── RAG / Knowledge base ────────────────────────────
+chromadb>=0.5.0
+
+# ── Audio I/O / VAD ──────────────────────────────────
+sounddevice>=0.4.6
+numpy>=1.26.0
+
+# ── Dataset prep & voice fine-tuning (optional) ─────
+pydub>=0.25.1
+trainer>=0.0.36
+
+# ── Web UI ───────────────────────────────────────────
+gradio>=4.36.0
+
+# ── Utilities ────────────────────────────────────────
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+requests>=2.31.0
